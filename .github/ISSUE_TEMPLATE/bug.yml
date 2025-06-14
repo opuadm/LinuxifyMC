@@ -13,6 +13,8 @@ body:
       label: Description
       description: Describe the bug in detail, including steps to reproduce it.
       placeholder: "By example: Something is missing, command is not working when it should, etc."
+      validations:
+        required: true
   - type: input
     id: expected-behavior
     attributes:
