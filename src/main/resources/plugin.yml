@@ -1,0 +1,31 @@
+name: LinuxifyMC
+version: '0.1.0'
+main: com.opuadm.LinuxifyMC
+api-version: '1.21'
+authors: [ OpuaYT ]
+description: Linux Terminal Simulator for Minecraft
+website: https://opuadm.com/
+commands:
+  cli:
+    description: Linux Terminal Simulator
+    permission: linuxifymc.command.cli
+  linuxifymc:
+    description: Manages LinuxifyMC settings.
+    usage: /<command> [global|user] [set] [setting] [value]
+    permission: linuxifymc.command.settings
+permissions:
+    linuxifymc.command.cli:
+        description: Allows the player to use the Linux terminal simulator
+        default: true
+    linuxifymc.command.settings:
+        description: Allows the player to change settings
+        default: true
+    linuxifymc.command.settings.global:
+        description: Allows the player to change global settings
+        default: op
+    linuxifymc.command.settings.user:
+        description: Allows the player to change user settings
+        default: true
+    linuxifymc.command.cli.nonlinuxcmds:
+        description: Allows the player to use non-linux commands
+        default: true
