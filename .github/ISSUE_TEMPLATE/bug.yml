@@ -5,18 +5,12 @@ labels: ["bug"]
 body:
   - type: markdown
     attributes:
-      value: |
-        Provide a detailed description of the bug you encountered here
+      value: Provide a description of a bug that you encountered.
   - type: textarea
     id: description
     attributes:
       label: Description
-      description: Describe the bug in detail, including steps to reproduce it.
-      placeholder: "By example: Something is missing, command is not working when it should, etc."
-  - type: input
-    id: what-is-happening
-    attributes:
-      label: what-is-happening
-      placeholder: "What is happening?"
-      validations:
-        required: true
+      description: Describe the bug in detail
+      placeholder: "A description of what the bug is. This includes how to reproduce it."
+    validations:
+      required: true

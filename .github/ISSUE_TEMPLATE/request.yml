@@ -5,14 +5,12 @@ labels: ["request"]
 body:
   - type: markdown
     attributes:
-      value: |
-        Give details on your feature request below
-
+      value: Describe what do you want to add
   - type: textarea
-    id: feature-description
+    id: solution
     attributes:
-      label: Feature Description
-      description: A detailed description of the feature you are requesting.
-      placeholder: "Anything about the feature that you are requesting!"
-      validations:
-        required: true
+      label: What do you want to add?
+      description: Describe how the feature would work
+      placeholder: "A description of the feature you want to add."
+    validations:
+      required: true
